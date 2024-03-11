@@ -3,6 +3,7 @@ package activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.daehankang.myandroidapplication.R
 import com.daehankang.myandroidapplication.databinding.ActivityLoginBinding
 
@@ -12,6 +13,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
 
         binding.loginToolbar.setNavigationOnClickListener { finish() }
         binding.signUpLoginBtn.setOnClickListener { clickLogin() }
