@@ -1,5 +1,6 @@
 package activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.daehankang.myandroidapplication.R
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+        binding.fabRefresh.setOnClickListener { startActivity(Intent(this,WriteActivity::class.java))}
 
 
 
