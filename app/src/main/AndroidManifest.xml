@@ -18,6 +18,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name="activities.ReviseProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.ReviceProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="activities.WriteActivity"
             android:exported="false" />
         <activity
