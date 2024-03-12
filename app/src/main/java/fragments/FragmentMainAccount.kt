@@ -1,5 +1,7 @@
 package fragments
 
+import activities.ReviseProfileActivity
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +23,16 @@ class FragmentMainAccount : Fragment(){
         savedInstanceState: Bundle?
     ): View? {
         return binding.root
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnChange.setOnClickListener { activity.let {
+            val intent = Intent(context, ReviseProfileActivity::class.java)
+            startActivity(intent)
+        } }
     }
 
 }
