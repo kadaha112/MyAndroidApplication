@@ -7,6 +7,14 @@
     tools:context="activities.ReviseProfileActivity"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sign_up_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="프로필 수정"
+        app:titleMarginStart="20dp"/>
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_profile"
         android:layout_width="150dp"
@@ -15,45 +23,54 @@
         app:civ_border_overlay="true"
         app:civ_border_width="1dp"
         app:civ_border_color="#706B6B"
-        android:layout_margin="16dp"
+        android:layout_marginTop="25dp"
         android:layout_gravity="center_horizontal"/>
     <Button
         android:id="@+id/btn_change_photo"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:text="사진 선택"
-        android:textSize="8dp"
+        android:textSize="10dp"
         android:textColor="@color/black"
         android:backgroundTint="#AEABAB"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til"
+        android:id="@+id/change_nickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:padding="8dp">
+        android:padding="16dp"
+        android:layout_marginTop="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_nickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="변경하실 닉네임을 입력하세요"/>
+            android:hint="변경할 닉네임을 입력하세요"
+            android:layout_margin="16dp"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_introduce"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/change_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="변경하실 비밀번호를 입력하세요"/>
+            android:layout_height="match_parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_introduce2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="변경하실 비밀번호를 한번 더 입력하세요"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="변경할 비밀번호를 입력하세요"
+                android:layout_margin="16dp"/>
 
 
+        </com.google.android.material.textfield.TextInputLayout>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_change_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="수정완료"
+        android:backgroundTint="#00ABF8"/>
 
 </LinearLayout>

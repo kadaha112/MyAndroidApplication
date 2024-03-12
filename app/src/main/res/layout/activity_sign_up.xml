@@ -40,11 +40,13 @@
         android:id="@+id/sign_up_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="비밀번호를 입력하세요"
+        android:hint="비밀번호를 입력하세요 (15자 이내)"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="12dp"
-        app:hintAnimationEnabled="true">
+        app:hintAnimationEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +61,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="12dp"
-        app:hintAnimationEnabled="true">
+        app:hintAnimationEnabled="true"
+        >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,6 +70,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"

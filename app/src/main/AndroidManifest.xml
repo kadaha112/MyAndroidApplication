@@ -18,10 +18,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="activities.ReviseProfileActivity"
+            android:name="activities.MainActivitySearch"
             android:exported="false" />
         <activity
-            android:name="activities.ReviceProfileActivity"
+            android:name="activities.MainActivityRecommend"
             android:exported="false" />
         <activity
             android:name="activities.ReviseProfileActivity"

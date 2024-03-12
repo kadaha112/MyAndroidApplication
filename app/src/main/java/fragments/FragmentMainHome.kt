@@ -2,6 +2,8 @@ package fragments
 
 import activities.MainActivityCulture
 import activities.MainActivityFood
+import activities.MainActivityRecommend
+import activities.MainActivitySearch
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -34,6 +36,14 @@ class FragmentMainHome : Fragment(){
         } }
         binding.ivbtnCulture.setOnClickListener { activity?.let {
             val intent = Intent(context, MainActivityCulture::class.java)
+            startActivity(intent)
+        } }
+        binding.ivbtnRecommend.setOnClickListener { activity?.let {
+            val intent = Intent(context, MainActivityRecommend::class.java)
+            startActivity(intent)
+        } }
+        binding.ivbtnSearch.setOnClickListener { activity?.let {
+            val intent = Intent(context, MainActivitySearch::class.java)
             startActivity(intent)
         } }
 
