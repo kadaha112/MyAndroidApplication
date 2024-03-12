@@ -9,10 +9,10 @@
     
     <ImageView
         android:id="@+id/iv"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:src="@drawable/my_logo"/>
 
     <TextView
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/iv"
-        android:text="어플소개 글"
+        android:text="일단 나와서 뭐할지 정해~"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/font1"
         android:textSize="17sp"
@@ -34,7 +34,7 @@
         android:gravity="center"
         android:text="시작하기"
         android:layout_below="@id/tv"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="230dp"
         android:textSize="18sp"
         android:fontFamily="@font/font1"
         android:padding="12dp"

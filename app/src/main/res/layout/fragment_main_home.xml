@@ -15,32 +15,32 @@
 
         <ImageButton
             android:id="@+id/ivbtn_food"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_margin="8dp"
             android:src="@drawable/main_fragment_home_food"
             android:scaleType="centerCrop"
             android:backgroundTint="#A1CAEC" />
         <ImageButton
             android:id="@+id/ivbtn_culture"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_margin="8dp"
             android:backgroundTint="#E4A7A7"
             android:scaleType="centerCrop"
             android:src="@drawable/main_fragment_home_culture"/>
         <ImageButton
             android:id="@+id/ivbtn_recommend"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_margin="8dp"
             android:backgroundTint="#A9D378"
             android:scaleType="centerCrop"
             android:src="@drawable/main_fragment_home_recommend"/>
         <ImageButton
             android:id="@+id/ivbtn_search"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_margin="8dp"
             android:backgroundTint="#D5BE9D"
             android:scaleType="centerCrop"
