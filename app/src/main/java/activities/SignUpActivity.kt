@@ -1,6 +1,5 @@
 package activities
 
-import MyApplication
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -30,7 +29,6 @@ class SignUpActivity : AppCompatActivity() {
         val email = binding.signUpEmail.editText!!.text.toString()
         val password = binding.signUpPassword.editText!!.text.toString()
         val confirmPassword = binding.signUpConfirmPassword.editText!!.text.toString()
-        MyApplication.auth.createUserWithEmailAndPassword(email,password)
 
         if (password != confirmPassword){
             AlertDialog.Builder(this).setMessage("패스워드가 일치하지 않습니다. \n다시 입력해주세요.").create().show()
