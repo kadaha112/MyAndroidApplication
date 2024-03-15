@@ -5,14 +5,14 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.daehankang.myandroidapplication.databinding.ActivitySignUpBinding
 import com.google.firebase.Firebase
-import com.google.firebase.auth.FirebaseAuth
+
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.firestore
 
 
 class SignUpActivity : AppCompatActivity() {
 
-    private val mAuth = FirebaseAuth.getInstance()
+
 
     private val binding by lazy { ActivitySignUpBinding.inflate(layoutInflater) }
 

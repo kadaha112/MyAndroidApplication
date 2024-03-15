@@ -37,14 +37,7 @@
         android:layout_marginLeft="16dp"
         android:layout_below="@id/btn_select_img"/>
 
-    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
-        android:id="@+id/dots_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:dotsColor="#787171"
-        app:selectedDotColor="@color/black"
-        android:layout_marginLeft="16dp"
-        android:layout_below="@id/pager"/>
+
 
 
 
@@ -59,7 +52,7 @@
         android:layout_margin="12dp"
         android:background="@drawable/edittext_border"
         android:padding="12dp"
-        android:layout_below="@id/dots_indicator"/>
+        android:layout_below="@id/pager"/>
     <EditText
         android:id="@+id/et_detail"
         android:layout_width="match_parent"
