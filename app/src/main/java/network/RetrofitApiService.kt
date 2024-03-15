@@ -10,12 +10,12 @@ import retrofit2.http.Query
 interface RetrofitApiService {
 
     // 카카오 로컬 검색 api...요청해주는 코드 만들어줘 우선 응답 typ : String
-    @Headers("Authorization: KakaoAK e3ec750735f5b739a5141adb46ef51ee")
+    @Headers("Authorization: KakaoAK 69d11c31deffdd031c0ae711e20be194")
     @GET("/v2/local/search/keyword,json")
     fun searchPlaceToString(@Query("query") query : String,@Query("x") longitude : String,@Query("y") latitude:String) : Call<String>
 
     // 카카오 로컬 검색 api...요청해주는 코드 만들어줘. 우선 응답 type : KakaoSearchPlaceResponse
-    @Headers("Authorization: KakaoAK e3ec750735f5b739a5141adb46ef51ee")
+    @Headers("Authorization: KakaoAK 69d11c31deffdd031c0ae711e20be194")
     @GET("/v2/local/search/keyword.json?sort=distance")
     fun searchPlace(@Query("query") query:String,@Query("x") longitude:String,@Query("y") latitude:String) : Call<KakaoSearchPlaceResponse>
 
