@@ -22,7 +22,7 @@
             android:scaleType="centerCrop"
             android:backgroundTint="#A1CAEC" />
         <ImageButton
-            android:id="@+id/ivbtn_culture"
+            android:id="@+id/ivbtn_movie"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_margin="8dp"

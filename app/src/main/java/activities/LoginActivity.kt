@@ -5,13 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
-import com.daehankang.myandroidapplication.R
+import com.daehankang.myandroidapplication.G
 import com.daehankang.myandroidapplication.databinding.ActivityLoginBinding
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.firestore
 import data.UserAccount
-import network.G
 
 class LoginActivity : AppCompatActivity() {
 
@@ -39,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
                     if (it.documents.size > 0){
 
                         val id : String = it.documents[0].id
-                        G.userAccount = UserAccount(id, email)
+                         G.userAccount= UserAccount(id, email)
 
                         val intent = Intent(this, MainActivity::class.java)
 

@@ -20,7 +20,7 @@ import com.daehankang.myandroidapplication.data.KakaoSearchPlaceResponse
 import com.daehankang.myandroidapplication.data.Place
 import com.daehankang.myandroidapplication.data.PlaceMeta
 import com.daehankang.myandroidapplication.databinding.FragmentPlaceListBinding
-import com.daehankang.tpsearchplacebykakao.network.RetrofitHelper
+import network.RetrofitHelper
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult

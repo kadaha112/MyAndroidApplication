@@ -43,6 +43,7 @@
             android:textColor="#686666"
             android:background="?attr/selectableItemBackground"/>
         <TextView
+            android:id="@+id/clickGoogle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Google 로그인하기"
@@ -55,6 +56,7 @@
             android:layout_margin="8dp"/>
 
         <TextView
+            android:id="@+id/clickKakao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="카카오 로그인하기"
@@ -67,6 +69,7 @@
             android:layout_margin="8dp"/>
 
         <TextView
+            android:id="@+id/clickNaver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="네이버 로그인하기"

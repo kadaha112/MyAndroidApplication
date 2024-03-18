@@ -34,7 +34,7 @@ class FragmentMainHome : Fragment(){
             val intent = Intent(context, MainActivityFood::class.java)
             startActivity(intent)
         } }
-        binding.ivbtnCulture.setOnClickListener { activity?.let {
+        binding.ivbtnMovie.setOnClickListener { activity?.let {
             val intent = Intent(context, MainActivityCulture::class.java)
             startActivity(intent)
         } }

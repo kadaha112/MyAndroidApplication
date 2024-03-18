@@ -1,4 +1,4 @@
-package network
+package com.daehankang.myandroidapplication
 
 import android.app.Application
 import com.kakao.sdk.common.KakaoSdk
