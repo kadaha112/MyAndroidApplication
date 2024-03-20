@@ -2,7 +2,7 @@ package activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.daehankang.myandroidapplication.R
+
 import com.daehankang.myandroidapplication.databinding.ActivityReviseProfileBinding
 
 class ReviseProfileActivity : AppCompatActivity() {
@@ -13,5 +13,7 @@ class ReviseProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.signUpToolbar.setNavigationOnClickListener { finish() }
+
+
     }
 }
