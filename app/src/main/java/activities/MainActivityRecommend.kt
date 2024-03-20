@@ -14,5 +14,7 @@ class MainActivityRecommend : AppCompatActivity() {
 
         binding.loginToolbar.setNavigationOnClickListener { finish() }
 
+
+
     }
 }
