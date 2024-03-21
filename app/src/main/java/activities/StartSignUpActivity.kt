@@ -20,6 +20,7 @@ import com.navercorp.nid.NaverIdLoginSDK
 import com.navercorp.nid.oauth.OAuthLoginCallback
 import data.UserAccount
 import com.daehankang.myandroidapplication.G
+import com.kakao.sdk.common.KakaoSdk
 import network.RetrofitApiService
 import retrofit2.Call
 import retrofit2.Response
@@ -70,6 +71,7 @@ class StartSignUpActivity : AppCompatActivity() {
 
     }
     private fun clickKakao(){
+        KakaoSdk.init(this, "b0c18fca587dd825f726a7b88aa52fd5")
         val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
             if (error != null) {
                 Toast.makeText(this, "카카오로그인 실패", Toast.LENGTH_SHORT).show()
@@ -102,7 +104,7 @@ class StartSignUpActivity : AppCompatActivity() {
 
     }
     private fun clickNaver(){
-        NaverIdLoginSDK.initialize(this,"lHP60yGqKrkg9b7IWIiv", "FVfdJDSyKZ","Search Place")
+        NaverIdLoginSDK.initialize(this,"4viP5cODUh6H0AuBW7pH", "FzK3DFZ7Qt","MyAndroidApplication")
 
         // 로그인 요청
         NaverIdLoginSDK.authenticate(this,object : OAuthLoginCallback {
