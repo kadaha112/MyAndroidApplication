@@ -8,45 +8,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:columnCount="2"
+        android:columnCount="1"
         android:rowCount="1000"
         tools:ignore="MissingConstraints"
         android:layout_centerInParent="true">
 
         <ImageButton
             android:id="@+id/ivbtn_food"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="240dp"
+            android:layout_height="140dp"
             android:layout_margin="8dp"
             android:src="@drawable/main_fragment_home_food"
             android:scaleType="centerCrop"
             android:backgroundTint="#A1CAEC" />
         <ImageButton
             android:id="@+id/ivbtn_movie"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="240dp"
+            android:layout_height="140dp"
             android:layout_margin="8dp"
             android:backgroundTint="#E4A7A7"
             android:scaleType="centerCrop"
             android:src="@drawable/main_fragment_home_culture"/>
         <ImageButton
             android:id="@+id/ivbtn_recommend"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="240dp"
+            android:layout_height="140dp"
             android:layout_margin="8dp"
             android:backgroundTint="#A9D378"
             android:scaleType="centerCrop"
             android:src="@drawable/main_fragment_home_recommend"/>
-        <ImageButton
-            android:id="@+id/ivbtn_search"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_margin="8dp"
-            android:backgroundTint="#D5BE9D"
-            android:scaleType="centerCrop"
-            android:src="@drawable/main_fragment_home_search"/>
-
-
 
 
     </GridLayout>

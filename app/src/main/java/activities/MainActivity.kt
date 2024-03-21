@@ -1,6 +1,8 @@
 package activities
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -26,8 +28,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-        supportFragmentManager.beginTransaction().add(R.id.container_fragment,FragmentMainHome()).commit()
+        binding.fabWrite.setOnClickListener { startActivity(Intent(this,WriteActivity::class.java))}
+        supportFragmentManager.beginTransaction().add(R.id.container_fragment,FragmentMainMap()).commit()
 
         binding.bnv.setOnItemSelectedListener {
             when (it.itemId){
@@ -38,7 +40,8 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-        binding.fabRefresh.setOnClickListener { startActivity(Intent(this,WriteActivity::class.java))}
+
+
 
 
 
