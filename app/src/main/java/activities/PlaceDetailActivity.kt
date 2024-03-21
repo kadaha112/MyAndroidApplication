@@ -36,8 +36,14 @@ class PlaceDetailActivity : AppCompatActivity() {
 
         }
 
-        db = openOrCreateDatabase("plave", MODE_PRIVATE, null)
+        db = openOrCreateDatabase("place", MODE_PRIVATE, null)
         db.execSQL("CREATE TABLE IF NOT EXISTS favor(id TEXT PRIMARY KEY, place_name TEXT,category_name TEXT, phone TEXT, address_name TEXT, road_address_name TEXT, x TEXT,y TEXT,place_url TEXT, distance TEXT)")
+
+        isFavorite = checkFavorite()
+
+        if (isFavorite) binding.fabFavor.setImageResource(R.drawable.baseline_favorite_24)
+        else binding.fabFavor.setImageResource(R.drawable.baseline_favorite_border_24)
+
         binding.fabFavor.setOnClickListener {
             if (isFavorite){
                 // 찜 DB의 데이터를 삭제

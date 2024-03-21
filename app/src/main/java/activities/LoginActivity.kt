@@ -35,7 +35,6 @@ class LoginActivity : AppCompatActivity() {
             .whereEqualTo("password",password)
             .get().addOnSuccessListener {
                 if (it.documents.size > 0){
-                    if (it.documents.size > 0){
 
                         val id : String = it.documents[0].id
                          G.userAccount= UserAccount(id, email)
@@ -55,4 +54,3 @@ class LoginActivity : AppCompatActivity() {
                 }
 
     }
-}
