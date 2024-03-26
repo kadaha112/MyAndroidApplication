@@ -42,10 +42,7 @@ class FragmentMainHome : Fragment(){
             val intent = Intent(context, MainActivityRecommend::class.java)
             startActivity(intent)
         } }
-        binding.ivbtnSearch.setOnClickListener { activity?.let {
-            val intent = Intent(context, MainActivitySearch::class.java)
-            startActivity(intent)
-        } }
+
 
 
 
